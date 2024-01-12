@@ -4,12 +4,14 @@
     font-family: 'Poppins', sans-serif;
     padding: 0%;
     margin: 0%;
+    text-decoration: none;
 }
 
 body{
     margin: 0;
     padding: 0;
     background: #FBF7F4;
+    transition: background-color 0.15s, color 0.15s, box-shadow 0.5s;
 }
 
 .container{
@@ -30,11 +32,18 @@ body{
     width: 150px;
     position: relative;
     border-radius: 20px;
-    box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.first_layer{
+    width: 82%;
+}
+
+.first_layer p{
+    text-align: justify;
 }
 
 .container .header{
-    background-color: FBF7F4;
     width: 80%;
     height: 10%;
     padding: 10%;
@@ -59,11 +68,17 @@ body{
     font-weight: 400;
 }
 
+.line{
+    width: 87%;
+    height: 1px;
+    background-color: #1d1d1f;
+    margin: 1% 0% -1% 0%;
+}
 .resume_body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .first_layer{
@@ -91,7 +106,8 @@ body{
 
 .resume_body .right{
     height: auto;
-    width: 5in;
+    width: 4.5in;
+    padding-top: 1.5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -109,17 +125,21 @@ body{
     justify-content: start;
 }
 
+.contact_one a{
+    color: #000;
+}
+
+.contact svg{
+    filter: invert(1);
+}
+
 .contact_one, .contact_two, .contact_three{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     font-size: small;
-    margin: 2% 0% 0% 0%;
-}
-
-.contact_one img, .contact_two img, .contact_three img{
-    margin: 0% 0% 5% 0%;
+    margin: 2% 0% 0% 0%;  
 }
 
 .education{
@@ -143,6 +163,15 @@ body{
     margin: 2% 0% 0% 0%;
 }
 
+.experience p{
+    text-align: justify;
+    padding-right: 8%;
+}
+
+.certifications p{
+    text-align: justify;
+}
+
 p{
     justify-content: flex-start;
 }
@@ -152,24 +181,23 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    filter: invert(0.9);
 }
 
-
-
-
-
-
-
+.contact_one svg, .contact_two svg, .contact_three svg{
+    filter: invert(1);
+}
 
 label{
-	position: relative;
+	position: absolute;
 	width: 45px;
-	height: 26px;
+	height: 22px;
 	right: 20px;
 	top: 20px;
 	border: 2px solid;
 	border-radius: 20px;
 }
+
 label:before{
 	position: absolute;
 	content: '';
@@ -182,6 +210,7 @@ label:before{
 	cursor: pointer;
 	transition: 0.4s;
 }
+
 label.active:before{
 	left: 24px;
 	background: #FBF7F4;
@@ -191,11 +220,40 @@ body.night{
     background: #201D24;
 	color: #FBF7F4;
 }
+
 body.night .container {
     background-color: #201D24;
     box-shadow: 0 0 80px 5px rgba(255, 0, 0, 0.5); 
 }
+
 body.night .container .header {
     background-color: #201D24;
     color: #FBF7F4;
 }
+
+body.night .container .header .imageq img {
+    color: #FBF7F4;
+    box-shadow: 0 0 30px 5px rgba(255, 0, 0, 0.5);
+}
+
+body.night .line{
+    background-color: #FBF7F4;
+}
+
+body.night .logos svg{
+    filter: invert(1);
+}
+
+body.night .contact_one p{
+    color: #FBF7F4;
+}
+
+body.night .contact{
+    filter: invert(1);
+}
+
+body.night .contact p{
+    filter: invert(1);
+}
+
+
