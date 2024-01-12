@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    color: #FBF7F4;
     padding: 0%;
     margin: 0%;
 }
@@ -9,7 +10,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: #201D24;
 }
 
 .container{
@@ -17,8 +18,8 @@ body{
     width: 100%;
     height: 11in;
     margin: 5% auto 5% auto;
-    background-color: rgb(191, 191, 191);
-    box-shadow: 0 0 1in -0in rgba(0, 0, 0, 0.5);
+    background-color: #201D24;
+    box-shadow: 0 0 1in -0.25in red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +28,7 @@ body{
 }
 
 .container .header{
-    background-color: red;
+    background-color: #201D24;
     width: 80%;
     height: 10%;
     padding: 10%;
@@ -39,4 +40,53 @@ body{
 
 .header h2{
     font-weight: 400;
+}
+
+.resume_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume_body .left{
+    height: auto;
+    width: 4in;
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.resume_body .left h1{
+    display: flex;
+    justify-content: start;
+}
+
+.resume_body .right{
+    height: auto;
+    width: 4in;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.resume_body .right h1{
+    display: flex;
+    justify-content: start;
+}
+
+.contact_one, .contact_two, .contact_three{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: small;
+    margin: 2% 0% 0% 0%;
+}
+
+.contact_one img, .contact_two img, .contact_three img{
+    margin: 0% 0% 5% 0%;
 }
