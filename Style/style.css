@@ -256,4 +256,39 @@ body.night .contact p{
     filter: invert(1);
 }
 
+@media (max-width: 425px) {
+    .container .header {
+        width: 80%;
+        height: 10%;
+        padding: 20%;
+        padding-bottom: 10%;
+    }
 
+    .first_layer {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .resume_body .right {
+        width: 3.5in;
+    }
+
+    .resume_body {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .imageq img{
+        width: 100px;
+    }
+
+    .container p {
+        font-size: xx-small;
+    }
+}
